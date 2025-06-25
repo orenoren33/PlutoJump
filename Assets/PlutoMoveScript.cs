@@ -19,7 +19,8 @@ public class PlutoMoveScript : MonoBehaviour
     private readonly String[] levels = {
         "1",
         "2",
-        "3"
+        "3",
+        "4"
     };
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -55,7 +56,7 @@ public class PlutoMoveScript : MonoBehaviour
         {
             var currentScene = SceneManager.GetActiveScene().name;
             var index = Array.IndexOf(levels, currentScene);
-            SceneManager.LoadScene(levels[index+1]);
+            SceneManager.LoadScene(levels[index + 1]);
         }
     }
 }
