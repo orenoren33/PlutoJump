@@ -35,17 +35,17 @@ public class PlutoMoveScript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
         {
-            myRigidbody.linearVelocity = Vector2.right * goRightPower;
+            myRigidbody.linearVelocity += Vector2.right * goRightPower;
         }
 
         if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            myRigidbody.linearVelocity = Vector2.left * goLeftPower;
+            myRigidbody.linearVelocity += Vector2.left * goLeftPower;
         }
 
         if ((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) && playerCollider.IsTouchingLayers())
         {
-            myRigidbody.linearVelocity = Vector2.up * goUpPower;
+            myRigidbody.linearVelocity += Vector2.up * goUpPower;
         }
 
         if (transform.position.y <= -10)
