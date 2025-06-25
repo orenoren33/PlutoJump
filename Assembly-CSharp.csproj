@@ -66,6 +66,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\DeadZoneScript.cs" />
+    <Compile Include="Assets\ButtonStartScript.cs" />
     <Compile Include="Assets\PlutoMoveScript.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -16,7 +16,8 @@ public class PlutoMoveScript : MonoBehaviour
     public float goUpPower;
     private Vector3 startPosision;
     public Collider2D endPlatform;
-    private readonly String[] levels = {
+    public readonly String[] levels = {
+        "Title",
         "1",
         "2",
         "3",
