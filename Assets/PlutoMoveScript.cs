@@ -1,7 +1,10 @@
+using System;
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEditor.IMGUI.Controls;
 using UnityEditor.Rendering;
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
 
 public class PlutoMoveScript : MonoBehaviour
@@ -13,6 +16,11 @@ public class PlutoMoveScript : MonoBehaviour
     public float goUpPower;
     private Vector3 startPosision;
     public Collider2D endPlatform;
+    private readonly String[] levels = {
+        "1",
+        "2",
+        "3"
+    };
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -45,7 +53,9 @@ public class PlutoMoveScript : MonoBehaviour
 
         if (playerCollider.IsTouching(endPlatform))
         {
-            SceneManager.LoadScene("2");
+            var currentScene = SceneManager.GetActiveScene().name;
+            var index = Array.IndexOf(levels, currentScene);
+            SceneManager.LoadScene(levels[index+1]);
         }
     }
 }
