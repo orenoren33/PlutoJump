@@ -612,7 +612,7 @@ GameObject:
   - component: {fileID: 780697409}
   - component: {fileID: 780697411}
   - component: {fileID: 780697410}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Finish Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}

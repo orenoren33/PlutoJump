@@ -1,6 +1,8 @@
 using Unity.VisualScripting;
 using UnityEditor.IMGUI.Controls;
+using UnityEditor.Rendering;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlutoMoveScript : MonoBehaviour
 {
@@ -10,6 +12,7 @@ public class PlutoMoveScript : MonoBehaviour
     public float goLeftPower;
     public float goUpPower;
     private Vector3 startPosision;
+    public Collider2D endPlatform;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -38,6 +41,11 @@ public class PlutoMoveScript : MonoBehaviour
         if (transform.position.y <= -10)
         {
             transform.position = startPosision;
+        }
+
+        if (playerCollider.IsTouching(endPlatform))
+        {
+            SceneManager.LoadScene("2");
         }
     }
 }

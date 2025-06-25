@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Plutfurmer_Platform_0: 4218919752172069175
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
