@@ -59,5 +59,15 @@ public class PlutoMoveScript : MonoBehaviour
             var index = Array.IndexOf(levels, currentScene);
             SceneManager.LoadScene(levels[index + 1]);
         }
+
+        if (myRigidbody.linearVelocity.x > 3)
+        {
+            myRigidbody.linearVelocity = new Vector3(3, myRigidbody.linearVelocity.y);
+        }
+
+        if (myRigidbody.linearVelocity.x < -3)
+        {
+            myRigidbody.linearVelocity = new Vector3(-3, myRigidbody.linearVelocity.y);
+        }
     }
 }
