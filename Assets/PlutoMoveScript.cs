@@ -16,13 +16,7 @@ public class PlutoMoveScript : MonoBehaviour
     public float goUpPower;
     private Vector3 startPosision;
     public Collider2D endPlatform;
-    public readonly String[] levels = {
-        "Title",
-        "1",
-        "2",
-        "3",
-        "4"
-    };
+    private GameLevels levels = new GameLevels();
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -55,9 +49,7 @@ public class PlutoMoveScript : MonoBehaviour
 
         if (playerCollider.IsTouching(endPlatform))
         {
-            var currentScene = SceneManager.GetActiveScene().name;
-            var index = Array.IndexOf(levels, currentScene);
-            SceneManager.LoadScene(levels[index + 1]);
+            levels.Next();
         }
 
         if (myRigidbody.linearVelocity.x > 3)

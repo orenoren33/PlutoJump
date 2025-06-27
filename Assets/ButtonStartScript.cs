@@ -9,13 +9,7 @@ using UnityEngine.SceneManagement;
 
 public class ButtonStartScript : MonoBehaviour
 {
-    public readonly String[] levels = {
-        "Title",
-        "1",
-        "2",
-        "3",
-        "4"
-    };
+    private GameLevels levels = new GameLevels();
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -28,8 +22,8 @@ public class ButtonStartScript : MonoBehaviour
     {
 
     }
-    public void StartGame()
+    public void NextScreen()
     {
-        SceneManager.LoadScene(levels[1]);
+        levels.Next();
     }
 }
