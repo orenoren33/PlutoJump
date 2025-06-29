@@ -243,9 +243,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 3c5affff
       m_LastClickedID: 0
-      m_ExpandedIDs: 4c92ffff16b8ffff88dcffffd8faffffdafaffffdcfaffffdefaffffe0faffffe2faffffe4fafffff8b3000054b4000072b500002cb60000dcb6000038bc0000f4bc000048bd0000a6bd000094be0000a8be0000
+      m_ExpandedIDs: 3c5affff4c92ffff16b8ffff88dcffffd8faffffdafaffffdcfaffffdefaffffe0faffffe2faffffe4fafffff8b3000054b4000072b500002cb60000dcb6000038bc0000f4bc000048bd0000a6bd000094be0000a8be00002c280100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -862,9 +862,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 0.28667212, y: -0.45581517, z: 0}
+    m_Target: {x: -0.068087354, y: -0.35445744, z: 0}
     speed: 2
-    m_Value: {x: 0.28667212, y: -0.45581517, z: 0}
+    m_Value: {x: -0.068087354, y: -0.35445744, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1021,7 +1021,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1031,15 +1031,15 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\oreno\PlutoJump
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 40b00000
-    m_LastClickedID: 45120
+    m_SelectedIDs: 3ab00000
+    m_LastClickedID: 45114
     m_ExpandedIDs: 000000003ab0000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1095,8 +1095,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: 3c5affff
+    m_LastClickedInstanceID: -42436
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
