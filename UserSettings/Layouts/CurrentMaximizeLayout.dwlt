@@ -68,7 +68,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 604, y: 377.8}
+  m_TargetSize: {x: 881.19995, y: 377.8}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -77,14 +77,14 @@ MonoBehaviour:
   m_VSyncEnabled: 0
   m_Gizmos: 0
   m_Stats: 0
-  m_SelectedSizes: 02000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -241.6
-    m_HBaseRangeMax: 241.6
+    m_HBaseRangeMin: -352.47998
+    m_HBaseRangeMax: 352.47998
     m_VBaseRangeMin: -151.12
     m_VBaseRangeMax: 151.12
     m_HAllowExceedBaseRangeMin: 1
@@ -862,9 +862,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 0.3120352, y: -0.48116103, z: 0}
+    m_Target: {x: 0.28667212, y: -0.45581517, z: 0}
     speed: 2
-    m_Value: {x: 0.3120352, y: -0.48116103, z: 0}
+    m_Value: {x: 0.28667212, y: -0.45581517, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1097,7 +1097,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
