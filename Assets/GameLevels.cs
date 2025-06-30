@@ -12,7 +12,8 @@ public class GameLevels
         "4",
         "5",
         "6",
-        "7"
+        "7",
+        "8"
     };
 
     public void Next()
