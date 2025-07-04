@@ -1,3 +1,5 @@
+#nullable enable
+
 using System;
 using System.Linq;
 using Unity.VisualScripting;
@@ -15,7 +17,9 @@ public class PlutoMoveScript : MonoBehaviour
     public float goLeftPower;
     public float goUpPower;
     private Vector3 startPosision;
-    public Collider2D endPlatform;
+    public Collider2D? endPlatform;
+    public Collider2D? secretPlatform;
+    public Collider2D? returnPlatform;
     private GameLevels levels = new GameLevels();
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -47,18 +51,33 @@ public class PlutoMoveScript : MonoBehaviour
             transform.position = startPosision;
         }
 
-        if (playerCollider.IsTouching(endPlatform))
+        if (endPlatform != null && playerCollider.IsTouching(endPlatform))
         {
+            Debug.Log("touch end");
             levels.Next();
+        }
+
+        if (secretPlatform != null && playerCollider.IsTouching(secretPlatform))
+        {
+            Debug.Log("touch secret");
+            SceneManager.LoadScene("3SecretLevel");
+        }
+
+        if (returnPlatform != null && playerCollider.IsTouching(returnPlatform))
+        {
+            Debug.Log("touch return");
+            SceneManager.LoadScene("4");
         }
 
         if (myRigidbody.linearVelocity.x > 3)
         {
+            Debug.Log("too fast r");
             myRigidbody.linearVelocity = new Vector3(3, myRigidbody.linearVelocity.y);
         }
 
         if (myRigidbody.linearVelocity.x < -3)
         {
+            Debug.Log("too fast l");
             myRigidbody.linearVelocity = new Vector3(-3, myRigidbody.linearVelocity.y);
         }
     }
