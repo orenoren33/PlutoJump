@@ -46,6 +46,12 @@ public class PlutoMoveScript : MonoBehaviour
             myRigidbody.linearVelocity += Vector2.up * goUpPower;
         }
 
+        if (Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown(KeyCode.Slash))
+        {
+            transform.position = startPosision;
+        }
+
+
         if (transform.position.y <= -10)
         {
             transform.position = startPosision;
@@ -53,31 +59,27 @@ public class PlutoMoveScript : MonoBehaviour
 
         if (endPlatform != null && playerCollider.IsTouching(endPlatform))
         {
-            Debug.Log("touch end");
             levels.Next();
         }
 
         if (secretPlatform != null && playerCollider.IsTouching(secretPlatform))
         {
-            Debug.Log("touch secret");
+
             SceneManager.LoadScene("3SecretLevel");
         }
 
         if (returnPlatform != null && playerCollider.IsTouching(returnPlatform))
         {
-            Debug.Log("touch return");
             SceneManager.LoadScene("4");
         }
 
         if (myRigidbody.linearVelocity.x > 3)
         {
-            Debug.Log("too fast r");
             myRigidbody.linearVelocity = new Vector3(3, myRigidbody.linearVelocity.y);
         }
 
         if (myRigidbody.linearVelocity.x < -3)
         {
-            Debug.Log("too fast l");
             myRigidbody.linearVelocity = new Vector3(-3, myRigidbody.linearVelocity.y);
         }
     }
